@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/daily"
+        android:icon="@drawable/daily_user"
+        android:title="Daily" />
+    <item
+        android:id="@+id/tracker"
+        android:icon="@drawable/tracker_user"
+        android:title="Tracker" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_account"
+        android:title="Me" />
+</menu>

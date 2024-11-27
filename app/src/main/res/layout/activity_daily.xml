@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- weight section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/arrow_back_btn"
+                android:padding="14dp"/>
+
+            <!-- welcome text -->
+            <TextView
+                android:id="@+id/welcomeText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Welcome to\nBody Sculptor!"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <!-- divider line -->
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/welcomeText2"
+                android:layout_marginVertical="20dp"
+                android:background="@android:color/white" />
+
+            <!-- question about weight -->
+            <TextView
+                android:id="@+id/berat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="What is your weight?\n(KG)"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <!-- weight input -->
+            <EditText
+                android:id="@+id/weight2"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/berat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="13dp"
+                android:textColor="#ABA4A4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- question about ideal weight -->
+            <TextView
+                android:id="@+id/idealWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weight2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="What is your ideal weight?"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <!-- ideal weight input -->
+            <EditText
+                android:id="@+id/idWeight"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/idealWeight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="13dp"
+                android:textColor="#ABA4A4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- done button -->
+            <Button
+                android:id="@+id/doneBtnn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idWeight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/Lavender"
+                android:text="DONE"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <!-- diet and exercise -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- activity -->
+            <TextView
+                android:id="@+id/xtvt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Activity"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <!-- divider line -->
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/xtvt"
+                android:layout_marginVertical="20dp"
+                android:background="@android:color/white" />
+
+            <!-- diet button -->
+            <Button
+                android:id="@+id/dietBtn"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/divider3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#C0C0C0"
+                android:text="DIET"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <!-- exercise button -->
+            <Button
+                android:id="@+id/exerciseBtn"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/dietBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#C0C0C0"
+                android:text="EXERCISE"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

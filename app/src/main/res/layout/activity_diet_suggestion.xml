@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_back_btn"
+            android:padding="14dp"/>
+
+        <!-- Weight and Ideal Weight Texts -->
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Weight: "
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/idealWeightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ideal Weight: "
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose two main ingredients"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/ingredient1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Chicken Breast"/>
+
+        <CheckBox
+            android:id="@+id/ingredient2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Avocado" />
+
+        <CheckBox
+            android:id="@+id/ingredient3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Spinach" />
+
+        <TextView
+            android:id="@+id/recipeResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe suggestions will appear here"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/getRecipeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Recipe"
+            android:layout_gravity="center"/>
+
+        <!-- Displaying Recipes -->
+        <TextView
+            android:id="@+id/recipeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggested Recipes will appear here"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_soft_purple"/>
+
+    </LinearLayout>
+
+</ScrollView>

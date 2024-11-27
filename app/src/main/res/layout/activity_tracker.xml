@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#766EA8">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow_back_btn"
+        android:padding="14dp"/>
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_diet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_view"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Diet Completed" />
+
+    <CheckBox
+        android:id="@+id/checkbox_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_diet"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Exercise Completed" />
+
+    <EditText
+        android:id="@+id/edit_text_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/checkbox_exercise"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Weight in KG"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button_save_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_weight"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+</RelativeLayout>

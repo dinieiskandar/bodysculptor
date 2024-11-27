@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "395305999568",
+    "firebase_url": "https://bodysculptor2-f8ae9-default-rtdb.firebaseio.com",
+    "project_id": "bodysculptor2-f8ae9",
+    "storage_bucket": "bodysculptor2-f8ae9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395305999568:android:259e6c57cbf50cec6c52d5",
+        "android_client_info": {
+          "package_name": "com.example.bodysculptor2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEqmlDub1Ja8wgdcNROosqF-qzB5bJWzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

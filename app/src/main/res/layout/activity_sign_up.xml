@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gym"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- welcome text -->
+        <TextView
+            android:id="@+id/welcomeText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_soft_welcome"
+            android:padding="10dp"
+            android:text="SIGN UP\n(MEMBER)"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <!-- whole box for input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <!-- email -->
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_Email"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email_user_login"
+                android:drawablePadding="8dp">
+            </EditText>
+
+            <!-- password -->
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_Pass"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/lavender_border"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/lock_user_login"
+                android:drawablePadding="8dp">
+            </EditText>
+
+            <!-- confirm password -->
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_Confirm"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/lavender_border"
+                android:padding="8dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/pass_user_login"
+                android:drawablePadding="8dp">
+            </EditText>
+
+            <!-- button -->
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:text="Sign Up"
+                android:id="@+id/signup_Btn"
+                android:textSize="18sp"
+                app:cornerRadius="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginRedirect"
+                android:text="Already have an account?\nLogin"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_soft_purple"
+                android:textColor="@color/white">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+   
+</ScrollView>

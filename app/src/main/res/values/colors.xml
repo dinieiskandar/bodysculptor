@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color definitions -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Lavender">#8692f7</color>
+    <color name="grey">#FF424244</color>
+    <color name="red">#FF0000</color>
+
+    <!-- String definitions -->
+    <string name="app_name">BodySculptor2</string>
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.BodySculptor2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- primary brand color -->
+        <item name="colorPrimary">@color/Lavender</item>
+        <item name="colorPrimaryVariant">@color/Lavender</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Theme definition -->
+    <style name="Theme.BodySculptor2" parent="Base.Theme.BodySculptor2"/>
+
+    <!-- notification theme-->
+    <style name="notificationSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#6D40BC</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+</resources>
